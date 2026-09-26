@@ -1,13 +1,31 @@
 #include <iostream>
 using namespace std;
 
+// bool linearSearch(int arr[], int size, int key){
+//     for(int i = 0; i<size; i++){
+//         if(key == arr[i]){
+//             return 1;
+//         }
+//     }
+//     return 0;
+// }
+
+
+
+
+
+// Using recursion
 bool linearSearch(int arr[], int size, int key){
-    for(int i = 0; i<size; i++){
-        if(key == arr[i]){
-            return 1;
-        }
+    if(size==0){
+        return false;
     }
-    return 0;
+
+    if(arr[0]==key){
+        return true;
+    }
+    else{
+        return linearSearch(arr+1, size-1, key);
+    }
 }
 
 int main(){
