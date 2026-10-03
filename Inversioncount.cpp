@@ -1,3 +1,6 @@
+// Definition: A pair of array indices (i, j) forms an inversion if i < j and arr[i] > arr[j]
+// Using merge sort 
+
 #include <iostream>
 #include <vector>
 using namespace std;
